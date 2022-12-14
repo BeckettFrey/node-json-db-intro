@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <style>
+    #content ul li {
+      list-style-type: none;
+      padding: 0 0 4px 23px;
+      background: url(https://www.computerhope.com/cdn/arrow.png) no-repeat left
+        center;
+    }
+  </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1><%= name.firstname%>'s Bulleted Planner</h1>
+    <ul>
+      <li><%= theItems.item1 %></li>
+      <li><%= theItems.item2 %></li>
+      <li><%= theItems.item3 %></li>
+      <li><%= theItems.item4 %></li>
+      <li><%= theItems.item5 %></li>
+    </ul>
+    <form action="/login/0" method="POST">
+      <label>
+        <input type="text" name="nitem" placeholder="What now?" required />
+        <button>Add</button>
+      </label>
+    </form>
+  </body>
+</html>
